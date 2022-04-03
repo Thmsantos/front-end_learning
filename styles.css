@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.jogos_meio_um,
+.jogos_meio_dois{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 2px;
+}
+
+.branca {
+    margin: 2.6px 0px;
+}
+
+.parte_branca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linha_um_jogos,
+.linha_dois_jogos{
+    margin: 2px 0px;
+}
+
+.verdes{
+    margin: 0 2px;
+}
+
+.jogos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.verde {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.ctd {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px 60px;
+    margin: 0 35px;
+}
+
+.ctd p{
+   margin: 10px;
+   font-size: 20px;
+   font-weight: 600;
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif; 
+   margin: 0 25px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(92, 91, 91);
+    background-image: linear-gradient(rgb(92, 91, 91), rgb(172, 172, 172));
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav p{
+    margin: 40px;
+    font-size: 33px;
+}
+
+.meio {
+    color: rgb(201, 201, 201);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.completo {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fot {
+    margin: 20px 100px;
+}
