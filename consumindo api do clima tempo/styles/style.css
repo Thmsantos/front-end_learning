@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 102, 102);
+}
+
+.titulo {
+    background-color: #ffffff;
+    font-size: 2rem;
+}
+
+.city,
+.date,
+.situacao,
+.print_temp,
+.low-high {
+    border: 3px solid rgb(255, 102, 102);
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.graus {
+    border: 1rem solid rgb(255, 102, 102);
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+}
+
+i {
+    width: 20rem;
+    height: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#ipt_cdd{
+    width: 20rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+} 
+
+span {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding-left: 100px;
+}
+
+
+.txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.thiago{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cor{
+    background-color: rgb(255, 102, 102);
+    color: rgb(255, 102, 102);
+}
