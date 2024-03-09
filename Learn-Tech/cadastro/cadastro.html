@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="https://kit.fontawesome.com/12b42156ae.js" crossorigin="anonymous"></script>
+    <title>LearnTech</title>
+    <script src="./cadastro.js"></script>
+</head>
+
+<header>
+        <div class="esquerda">
+            <img class="wifi" src="../images/wifi_Icon.png">
+            <p class="txt_header">LearnTech</p>
+            <button class="voltar" onclick="voltar()">voltar</button>
+        </div>
+</header>
+<body>
+    <div id="form">
+            <h2>Cadastrar</h2>
+            <div class="input">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input id="login" name="username" placeholder="Nome" type="text">
+                <p class="linha_und">
+                    ____________________________________
+                </p>
+            <div class="input">
+                <i class="fa-solid fa-lock"></i>
+                <input id="senha" name="password" placeholder="Senha" type="password">
+                <p class="linha_und">
+                    ____________________________________
+                </p>
+            </div>
+            <div id="btn">
+              <button onclick="cadastrar()" type="submit">Cadastrar</button>
+           </div>
+    </div>
+</body>
+</html>

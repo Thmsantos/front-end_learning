@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Sans-serif;
+}
+
+
+.img_logo{
+    width: 327px;
+    height: 107px;
+}
+
+.icon_insta,
+.icon_wpp,
+.icon_face{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+
+.icon_yt{
+    width: 35px;
+    height: 26px;
+    margin: 10px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+body{
+    background-image: linear-gradient(to right,#F7C2D0, #F7C2D0, #ffe5ec,#f0e9f8, #FCFBFD);
+}
+
+.texto_esq{
+    width: 40%;
+    height: 45%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    color: #c952b9;
+    padding: 2%;
+}
+
+.img_dir{
+    width: 30%;
+    height: 35%;
+    border: 4px solid #c952b9;
+    border-radius: 30px;
+    margin: 2%;
+}
+
+.primeira_parte{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-left: 12%;
+    margin-right: 12%;
+    background-color: #F0D9CD;
+    border: 4px solid #c952b9;
+    border-radius: 40px;
+}
+
+.segunda_parte{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-left: 12%;
+    margin-right: 12%;
+    background-color: #F0D9CD;
+    border: 4px solid #c952b9;
+    border-radius: 40px;
+}
+
+.titulo{
+    font-size: 2.0rem;
+    font-weight: 600;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    color: #c952b9;
+    padding: 2%;
+}
+
+.img_clinica{
+    width: 194px;
+    height: 117px;
+    border: 4px solid #c952b9;
+    border-radius: 10px;
+}
+
+.itens_imgs{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.img_maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #c952b9;
+    border-radius: 10px;
+    width: 494px;
+    height: 50%;
+    margin-bottom: 25px;
+}
+
+.mapa{
+    align-items: center;
+    width: 500px;
+    height: 25%;
+    border: 3px solid #c952b9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding-top: 20px;
+} 
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.texto_segunda_parte{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.modal {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+   
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+    background-color: #000000;
+}
+
+.footer-btn-close {
+    color: #000000;
+    
+}
+
+.txt_modal_int{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+.terceira_parte{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 12%;
+    margin-right: 12%;
+    background-color: #F0D9CD;
+    border: 4px solid #c952b9;
+    border-radius: 40px;
+    margin-bottom: 8%;
+}
+
+.linha_somb{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img_modal{
+    border: 5px solid #c952b9;
+    border-radius: 100px;
+    height: 190px;
+    width: 190px;
+    background-color: #F0D9CD;
+    margin: 5%;
+}
+
+.txt_modal_ext{
+    margin: 5%;
+    color: #c952b9;
+    font-size: 1.8rem;
+}
+
+#btn_modal{
+    width: 75%;
+    margin: 3%;
+    border: 3px solid #c952b9;
+    border-radius: 30px;
+}
+
+#item_linha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10%;
+}
+
+.titulo_procedimentos{
+    font-size: 3.0rem;
+    font-weight: 600;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    color: #c952b9;
+    padding: 2%;
+}
+
+.titulo_sobrancelha{
+    font-size: 1.9rem;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.fechar{
+    font-weight: 800;
+}
+
+#caixa{
+    width: 30%;
+    border: 6px solid #c952b9;
+    border-radius: 20px;
+}
+
+.titulo_modal{
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+.txt_modal_int{
+    font-size: 1.3rem;
+}
+
+@media (max-width: 950px) {
+    .img_logo{
+        width: 202px;
+        height: 67px;
+    }
+
+    .icon_insta,
+    .icon_wpp,
+    .icon_face{
+        width: 30px;
+        height: 30px;
+        margin: 8px;
+    }
+
+
+    .icon_yt{
+        width: 25px;
+        height: 16px;
+        margin: 8px;
+    }
+
+    .texto_esq{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 750px){
+    .img_clinica{
+        width: 144px;
+        height: 87px;
+    }
+
+    .itens_imgs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .mapa{
+        width: 364px;
+        height: 50%;
+    }
+
+    .texto_segunda_parte{
+        font-size: 0.8rem;
+    }
+
+    body{
+        background-image: linear-gradient(to right,#F7C2D0, #F7C2D0, #F7C2D0, #ffe5ec,#f0e9f8, #FCFBFD);
+    }
+}
+
+@media (max-width: 550px){
+    .img_logo{
+        width: 152px;
+        height: 47px;
+    }
+
+    .icon_insta,
+    .icon_wpp,
+    .icon_face{
+        width: 25px;
+        height: 25px;
+        margin: 6px;
+    }
+
+    .texto_esq{
+        font-size: 1.0rem;
+    }
+
+    .img_clinica{
+        width: 104px;
+        height: 62px;
+    }
+
+    .titulo{
+        font-size: 1.0rem;
+    }
+
+    .mapa{
+        width: 304px;
+        height: 50%;
+    }
+
+    .img_dir{
+       margin-top: 4%;
+       margin-bottom: 4%
+    }
+
+    body{
+        background-image: linear-gradient(to right,#F7C2D0, #F7C2D0, #F7C2D0, #ffe5ec,#f0e9f8, #FCFBFD);
+    }
+
+}
+
+@media (max-width: 460px){
+    .img_logo{
+        width: 132px;
+        height: 39px;
+    }
+
+    .icon_insta,
+    .icon_wpp,
+    .icon_face{
+        width: 21px;
+        height: 21px;
+        margin: 4px;
+    }
+
+    .mapa{
+        width: 268px;
+        height: 50%;
+    }
+
+    body{
+        background-image: linear-gradient(to right,#F7C2D0, #F7C2D0, #F7C2D0, #ffe5ec,#f0e9f8, #FCFBFD);
+    }
+}
+
+@media (max-width: 400px){
+    .texto_esq,
+    .titulo{
+        font-size: 0.7rem;
+    }
+    
+    .img_dir,
+    .primeira_parte,
+    .segunda_parte,
+    .img_clinica,
+    .mapa{
+        border: 2px solid #c952b9;
+    }
+
+    .mapa{
+        border-radius: 2px;
+        width: 188px;
+    }
+
+    .img_clinica{
+        width: 74px;
+        height: 47px;
+    }
+
+    .primeira_parte,
+    .segunda_parte,
+    .img_dir{
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 300px){
+    .texto_segunda_parte{
+        font-size: 0.6rem;
+    }
+
+    .icon_insta,
+    .icon_wpp,
+    .icon_face{
+        width: 18px;
+        height: 18px;
+        margin: 2px;
+    }
+
+    .img_logo{
+        width: 122px;
+        height: 36px;
+    }
+}
+
+

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #1D154A;
+}
+
+.wifi{
+    width: 65px;
+    height: 65px;
+    margin-left: 40px;
+}
+
+.txt_header{
+    color: #ffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+.logOut{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #1D154A;
+    width: 100px;
+    height: 32px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.carrinho{
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    margin-right: 40px;
+}
+
+.direita{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.image{
+    width: 300px;
+    height: 200px;
+    border: 1px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow:    0px 10px 20px rgba(0, 0, 0, 0.77);
+    box-shadow:         0px 10px 20px rgba(0, 0, 0, 0.77);
+}
+
+.item_linha{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.linha{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.comprar{
+    margin-left: 100px; 
+    width: 100px;
+    background-color: #1D154A;
+    color: #fff;
+    height: 30px;
+    border: 1px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.texto_bloco{
+    margin-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #1D154A;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.corpo{
+    background-image: url("../images/fundo2.jpg");
+    background-size: 100%;
+}

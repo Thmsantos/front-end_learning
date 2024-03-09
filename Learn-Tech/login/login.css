@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/Fundo.jpg");
+    background-size: 100%;
+}
+
+#form{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff4f;
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+    align-items: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.title{
+    font-size: 1.8em;
+    margin-bottom: 10%;
+}
+
+.input{
+    min-width: 280px;
+    padding-top: 26px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url("../images/Fundo.jpg");
+    background-size: 100%;
+}
+
+
+.wifi{
+    width: 65px;
+    height: 65px;
+    margin-left: 40px;
+}
+
+.txt_header{
+    color: #ffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+.input input{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(-10%);
+    font-size: 11pt;
+}
+
+#btn{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#btn button{
+    font-family: 'Poppins',sans-serif;
+    background: linear-gradient(-45deg, #001549, #38326b,#08014b);
+    width: 100%;
+    height: 40%;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+input{
+    font-size: 18px;
+    background-color: #ffffff00;
+    border: 1px solid #ffffff00;
+    color: #fff;
+    text-align: center;
+}
+
+.linha_und{
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.voltar{
+    margin-left: 30px;
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #000;
+}
