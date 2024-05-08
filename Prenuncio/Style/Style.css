@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+}
+
+/*variaveis*/
+:root{
+    /* cores */
+    --cinzaUm : #6B6B6B;
+    --cinzaDois : #D9D9D9;
+    --cinzaTres : #3C3C3C;
+
+    /* Fontes */
+    --titulo : 50px;
+    --texto : 32px;
+    --subTexto : 28px;
+}
+
+/* codigo */
+
+.cabecalho{
+    background-color: var(--cinzaUm);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.cabecalho img{
+    width: 250px;
+    height: 200px;
+    margin: 50px;
+}
+
+.sumario{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 50px;
+}
