@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    background-image: url("UntitledPagamento.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto 50% auto;
+    height: 100vh;
+}
+
+.container div{
+    padding: 20px;
+}
+
+.title{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.logo{
+    height: 100px;
+    margin-left: 23%;
+}
+
+.botoes{
+    text-align: center;
+}
+
+.logotipo{
+    display: flex;
+    align-items: center; 
+    font-size: 45px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+}
+
+.cadastre{
+    font-family: 'Poppins', sans-serif;
+    border: 2px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    width: 210px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login{
+    font-family: 'Poppins', sans-serif;
+    border: 2px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    width: 210px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+

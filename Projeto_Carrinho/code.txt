@@ -1,0 +1,9 @@
+insert into cursos values ('', 'c++', '47.00', '', '');
+insert into cursos values ('', 'css ', '32.00', '', '');
+insert into cursos values ('', 'html', '75.00', '', '');
+insert into cursos values ('', 'java', '42.00', '', '');
+insert into cursos values ('', 'javascript', '84.00', '', '');
+insert into cursos values ('', 'linux', '30.00', '', '');
+insert into cursos values ('', 'mysql', '60.00', '', '');
+insert into cursos values ('', 'php', '50.00', '', '');
+insert into cursos values ('', 'python', '46.00', '', '');

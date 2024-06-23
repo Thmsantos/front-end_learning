@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cadastro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Cadastro LearnTech</title>
+</head>
+<body>
+    <div class ="wrapper">
+        <form id="cad">
+            <h1><i class='bx bxs-user-circle' ></i></h1>
+            <div class="input-box">
+                <input name="Nome" type="text"maxlength="30" placeholder="Nome Completo"
+                 required>
+                 <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input name="Senha" type="password" maxlength="8"
+                placeholder="Senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn">Cadastre-se</button>
+            <div class="register-link">
+            <a
+                href="login.html">já possui uma conta?</a>
+        </form>
+
+    </div>
+    
+    <script>
+        const formCad = document.querySelector("#cad");
+
+        formCad.addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          const formData = new FormData(formCad);
+
+          let Nome = formData.get("Nome");
+          let Senha = formData.get("Senha");
+
+          const data = new URLSearchParams(formData)
+
+          fetch('http://localhost:4000/learn/cad', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body :  JSON.stringify({
+                    "Nome": `${Nome}`,
+                    "Senha": `${Senha}`
+                })
+          }).then(res => res.json())
+            .then(data => {
+              console.log(data)
+              if(data == "cadastrado"){
+                alert('CADASTRADO')
+                document.location.href= './login.html'
+              }else{
+                alert('Login invalido!!!')
+              }
+            })
+            .catch(error => console.log(error))
+
+        })
+
+    </script>
+</body>
+</html>

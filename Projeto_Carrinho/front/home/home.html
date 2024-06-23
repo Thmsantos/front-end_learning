@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginainicial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="./home.css">
+    <script src="./home.js"></script>
+</head>
+ 
+<body>
+    <header>
+        <div class="esquerda">
+            <img class="wifi" src="../images/wifi_Icon.png">
+            <p class="txt_header">LearnTech</p>
+        </div>
+        <div class="direita">
+            <button onclick="logout()" class="logOut">Logout</button>
+            <a href="../carrinho/CarrinhoPagamento.html">
+                <img class="carrinho" src="../images/carrinho_icon.png">
+            </a>
+        </div>
+    </header>
+    <div class="corpo">
+        <div class="linha">
+            <div class="item_linha">
+                <img class="image" src="../images/1.png">
+                <br>
+                <div class="texto_bloco" id="a">
+ 
+                </div>
+                <br>
+                <button onclick="adicionar('C++', '47.00')" class="comprar">Comprar</button>
+            </div>
+            <div class="item_linha">
+                <img class="image" src="../images/2.png">
+                <br>
+                <div class="texto_bloco" id="b">
+ 
+                </div>
+                <br>
+ 
+                <button onclick="adicionar('css', '32.00')" class="comprar">Comprar</button>
+            </div>
+            <div class="item_linha">
+                <img class="image" src="../images/3.png">
+                <br>
+                <div class="texto_bloco" id="c">
+ 
+                </div>
+                <br>
+                <button onclick="adicionar('html', '75.00')" class="comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="item_linha">
+                <img class="image" src="../images/4.png">
+                <br>
+                <div class="texto_bloco" id="d">
+ 
+                </div>
+                <br>
+ 
+                <button onclick="adicionar('java', '42.00')" class="comprar">Comprar</button>
+            </div>
+            <div class="item_linha">
+                <img class="image" src="../images/5.png">
+                <br>
+                <div class="texto_bloco" id="e">
+ 
+                </div>
+                <br>
+                <button onclick="adicionar('javascript', '84.00')" class="comprar">Comprar</button>
+            </div>
+            <div class="item_linha">
+                <img class="image" src="../images/6.png">
+                <br>
+                <div class="texto_bloco" id="f">
+ 
+                </div>
+                <br>
+                <button onclick="adicionar('linux', '30.00')" class="comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="item_linha">
+                <img class="image" src="../images/7.png">
+                <br>
+                <div class="texto_bloco" id="g">
+ 
+                </div>
+                <br>
+                <button onclick="adicionar('mysql', '60.00')" class="comprar">Comprar</button>
+            </div>
+            <div class="item_linha">
+                <img class="image" src="../images/8.png">
+                <br>
+                <div class="texto_bloco" id="h">
+ 
+                </div>
+                <br>
+                <button onclick="adicionar('php', '50.00')" class="comprar">Comprar</button>
+            </div>
+            <div class="item_linha">
+                <img class="image" src="../images/9.png">
+                <br>
+                <div class="texto_bloco" id="i">
+ 
+                </div>
+                <br>
+                <button onclick="adicionar('python', '46.00')" class="comprar">Comprar</button>
+            </div>
+        </div>
+    </div>
+ 
+    <script>
+ 
+        function logout(){
+            window.location.href = '../pag_inicial/paginainicial.html'
+        }
+ 
+        function adicionar(NomeCurso, Valor) {
+            console.log(NomeCurso, Valor)
+            fetch('http://localhost:4000/learn/adicionar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    "NomeCurso": `${NomeCurso}`,
+                    "Valor": `${Valor}`
+                })
+            }).then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    if(data == 'foi'){
+                        alert('ADICIONADO AO CARRINHO')
+                    }
+                })
+        }
+ 
+        fetch("http://localhost:4000/learn/cursos")
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                let indice = Object.keys(data);
+                let valores = Object.values(data);
+                let letras = ['#a', '#b', '#c', '#d', '#e', '#f', '#g', '#h', '#i'];
+ 
+                for (i = 0; i < indice.length; i++) {
+                    const html = `
+                    <p>${valores[i].NomeCurso}</p>
+                    <p>${valores[i].Valor}</p>
+                    <br>
+                `;
+                    document.querySelector(letras[i]).insertAdjacentHTML("beforeend", html);
+                }
+            })
+            .catch((error) => console.log(error));
+    </script>
+</body>
+ 
+</html>

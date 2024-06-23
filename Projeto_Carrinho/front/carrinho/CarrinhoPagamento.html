@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CarrinhoPagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Pagamento</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="item-1">
+            <img class="wifi" src="../images/wifi_Icon.png">
+            <p class="txt_header">LearnTech</p>
+        </div>
+
+        <div id="item-2">
+            <button onclick="logout()" class="logOut">Logout</button>
+        </div>
+
+
+
+        <div id="item-3">
+
+        </div>
+
+        <div id="item-4">
+            <div class="pagamento">
+                <p>Pagamento</p>
+                <p>Escolha a forma de pagamento</p>
+                <div class="selecionar"><input type="radio" name="formaDePagamento" value="CartaoDeCredito" /> Cartão De
+                    Crédito<br /></div>
+                <div class="selecionar"><input type="radio" name="formaDePagamento" value="CartaoDeDebito" /> Cartão De
+                    Débito<br /></div>
+                <div class="selecionar"><input type="radio" name="formaDePagamento" value="pix" /> Pix<br /></div>
+                <div class="selecionar"><input type="radio" name="formaDePagamento" value="boleto" /> Boleto<br /></div>
+                <button onclick="comprar()" class="btn">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function logout() {
+            window.location.href = '../pag_inicial/paginainicial.html'
+        }
+        function comprar() {
+            alert('VOLTE SEMPRE')
+
+            fetch('http://localhost:4000/learn/limpar',
+                {
+                    method: 'DELETE',
+                    headers: { 'Content-Type': 'application/json' }
+                })
+                .then((res) => {
+                    return res.json();
+                })
+                .then((data) => console.log(data))
+
+            window.location.href = '../home/home.html'
+
+        }
+
+        fetch('http://localhost:4000/learn/somar')
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                const html = `
+            <p class="pag">Total: ${data[1]}</p>
+            <p class="pag">Valor: ${data[0]},00</p>
+            <br>
+        `;
+                document.querySelector("#item-3").insertAdjacentHTML("beforeend", html);
+            })
+    </script>
+</body>
+
+</html>

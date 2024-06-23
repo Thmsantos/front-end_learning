@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+    background-image:url('Rectangle\ 44.png');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 65px;
+}
+
+.txt_header{
+    margin-left: 0px;
+    margin-top: 10px;
+    color: #ffff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+.pagamento{
+    height: 500px;
+    width: 350px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    background-color: #fff;
+    color: #1D154A;
+    margin-top: 30px;
+}
+
+.btn{
+    height: 40px;
+    width: 250px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    background-color: #1D154A;
+    color: #fff;
+}
+
+.selecionar{
+    border-radius: 30px;
+    border: 1px solid #1D154A;
+    margin-bottom: 20px;
+    text-align: start;
+    color: #1D154A;
+}
+
+
+.container div{
+    padding: 20px;
+}
+
+#item-1{
+    height: 32px;
+    background-color: #1D154A;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+#item-2{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-color: #1D154A;
+    
+}
+
+
+.wifi{
+    width: auto;
+    height: 65px;
+    margin-left: 20px;
+}
+
+.logOut{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #1D154A;
+    width: 100px;
+    height: 32px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+#item-3{
+    height: 539px; 
+    color: #1D154A;
+    text-align: start;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#item-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #1D154A;
+}
+
+.pag{
+    margin-left: 100px;
+}
+
+.pagamento .selecionar input[type="radio"] {
+    width: 20px; 
+    height: 20px; 
+}
